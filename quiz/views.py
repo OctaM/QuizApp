@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.views import generic
+from .models import User
 from django.views.decorators.csrf import csrf_exempt,csrf_protect, requires_csrf_token
 from django.core.files.uploadedfile import SimpleUploadedFile
 import sys
@@ -36,16 +37,18 @@ def LogInView(request):
     elif request.method == 'POST':
 
         username = request.POST.get('username')
-        password = 'hue' #request.POST.get('password')
+        password = request.POST.get('pass')
         print(">> Client msg : " + str(username) + "  " + str(password))
         # globalData.append()
 
-        #DATABASE RETRIVE
+        # retrieving user from database
+        user = User.objects.filter(username=username, password=password)
 
-        #VALIDATION
+        #validation
 
-        #SPLIT PATH
-        return HttpResponseRedirect('/quiz/login/')
+        if user is not None:
+            return HttpResponseRedirect('/quiz/login/')
+
 
 def TestView(request):
     if request.method == 'GET':
