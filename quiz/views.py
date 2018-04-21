@@ -32,14 +32,32 @@ def LogInView(request):
     if request.method == 'GET':
         temp = len(globalData)
         context = {'info': globalData, 'len': temp}
+        return render(request, 'quiz/login.html', context)
+    elif request.method == 'POST':
+
+        username = request.POST.get('username')
+        password = 'hue' #request.POST.get('password')
+        print(">> Client msg : " + str(username) + "  " + str(password))
+        # globalData.append()
+
+        #DATABASE RETRIVE
+
+        #VALIDATION
+
+        #SPLIT PATH
+        return HttpResponseRedirect('/quiz/login/')
+
+def TestView(request):
+    if request.method == 'GET':
+        temp = len(globalData)
+        context = {'info': globalData, 'len': temp}
         return render(request, 'quiz/test.html', context)
     elif request.method == 'POST':
 
         data = request.POST.get('data')
         print(">> Client msg : " + str(data))
         globalData.append(data)
-        return HttpResponseRedirect('/')
-
+        return HttpResponseRedirect('/quiz/login/')
 
 
 

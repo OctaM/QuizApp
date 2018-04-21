@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn Quiz App</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'quiz/styleLogin.css' %}" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'quiz/login.js' %}"> </script>
+</head>
+<body>
+
+<h3> LogIn App </h3>
+<form id="login">
+    <label>Username : </label>
+    <input id="username" type="text" placeholder="Username" /> <br/><br/>
+    <label>Password : </label>
+    <input id="pass" type="password" placeholder="" />
+
+    <p>
+
+    <input type="submit" id="submit_but" value="LogIn" onclick="send()">
+
+</form>
+</body>
+</html>

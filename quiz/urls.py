@@ -5,7 +5,7 @@ app_name = 'quiz'
 
 urlpatterns = [
     # #/dev/
-    # url(r'^$', views.IndexTemp),
+    url(r'^$', views.LogInView),
     url('login/', views.LogInView),
     # url(r'^test2/$', views.test2View),
     ]
