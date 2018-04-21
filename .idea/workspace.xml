@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="034c9330-c510-4611-876e-34139a2f3b68" name="Default" comment="Create app">
-      <change beforePath="" afterPath="$PROJECT_DIR$/quiz/static/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/quiz/static/quiz/styleIndex.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/quiz/static/quiz/test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/quiz/templates/quiz/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/quiz/urls.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/QuizApp/settings.py" afterPath="$PROJECT_DIR$/QuizApp/settings.py" />
-      <change beforePath="$PROJECT_DIR$/QuizApp/urls.py" afterPath="$PROJECT_DIR$/QuizApp/urls.py" />
-      <change beforePath="$PROJECT_DIR$/quiz/views.py" afterPath="$PROJECT_DIR$/quiz/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -250,6 +242,14 @@
       <option name="presentableId" value="Default" />
       <updated>1524303457577</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create app">
+      <created>1524308180794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524308180795</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -303,6 +303,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create app" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
