@@ -9,6 +9,7 @@
     <script src="{% static 'quiz/login.js' %}"> </script>
 </head>
 <body>
+
 <h3> LogIn App </h3>
 {% csrf_token %}
 <form id="login">
@@ -18,7 +19,6 @@
     <input id="pass" type="password" placeholder="" />
 
     <p>
-
     <input type="submit" id="submit_but" value="LogIn" onclick="send()">
 
 </form>

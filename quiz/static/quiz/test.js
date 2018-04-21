@@ -3,8 +3,8 @@ function alertme(msg){
 }
 
 function send(){
-    var textInput = document.getElementById('username');
-    var btn = document.getElementById('pass');
+    var textInput = document.getElementById('text');
+    var btn = document.getElementById('btn');
     var str = textInput.value;
     $.post("", { data: str });
     textInput.value="";

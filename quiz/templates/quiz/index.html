@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     {% load static %}
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="{% static 'dev/styleIndex.css' %}"/>
-    <script src="{% static 'dev/util.js' %}"> </script>
+    <link rel="stylesheet" href="{% static 'quiz/styleIndex.css' %}"/>
+    <script src="{% static 'quiz/index.js' %}"> </script>
 
-    <title>PyDraw Dev</title>
+    <title>Quiz Main</title>
 </head>
+    <h3> Home page Quizz App </h3>
+    <table>
+        <tr>
+            <td>
+                <input class ="button" type = "submit" id="profile_but" value="Your Profile" onclick="toOtherPage('profile')">
+            </td>
+            <td>
+                <input class ="button" type = "submit" id="start_but" value="Start Game">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                <input class ="button" type = "submit" id="join_but" value="Join Game">
+                <div id="hidden">
+
+                </div>
+            </td>
+            <td>
+                <input class ="button" type = "submit" id="stats_but" value="Stats">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class ="button" type = "submit" id="logout_but" value="LogOut">
+            </td>
+        </tr>
+    </table>
 
 </html>
