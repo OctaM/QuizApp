@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'dev.apps.DevConfig',
     'quiz.apps.QuizConfig',
     'django.contrib.admin',
     'django.contrib.auth',
