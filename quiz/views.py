@@ -37,7 +37,7 @@ def LogInView(request):
     elif request.method == 'POST':
 
         username = request.POST.get('username')
-        password = request.POST.get('pass')
+        password = request.POST.get('password')
         print(">> Client msg : " + str(username) + "  " + str(password))
         # globalData.append()
 
@@ -45,8 +45,8 @@ def LogInView(request):
         user = User.objects.filter(username=username, password=password)
 
         #validation
-
         if user is not None:
+            print('userul a fost gasit')
             return HttpResponseRedirect('/quiz/login/')
 
 

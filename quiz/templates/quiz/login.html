@@ -9,8 +9,8 @@
     <script src="{% static 'quiz/login.js' %}"> </script>
 </head>
 <body>
-
 <h3> LogIn App </h3>
+{% csrf_token %}
 <form id="login">
     <label>Username : </label>
     <input id="username" type="text" placeholder="Username" /> <br/><br/>
